@@ -1,0 +1,896 @@
+{
+  "sintomas_generales": [
+    {
+      "id": "fiebre",
+      "nombre": "Fiebre / Temperatura alta",
+      "descripcion": "Temperatura corporal elevada",
+      "icono": "🤒",
+      "relacionados": ["fiebre_alta", "escalofrios_severos", "sudoracion_nocturna", "dolor_muscular", "malestar_general"]
+    },
+    {
+      "id": "tos",
+      "nombre": "Tos persistente",
+      "descripcion": "Tos seca o con expectoración",
+      "icono": "😷",
+      "relacionados": ["tos_seca", "tos_flema", "dolor_pecho_tos", "tos_nocturna", "flema_sangre"]
+    },
+    {
+      "id": "vomitos",
+      "nombre": "Náuseas / Vómitos",
+      "descripcion": "Náuseas y ganas de vomitar",
+      "icono": "🤢",
+      "relacionados": ["nauseas_matutinas", "vomitos_frecuentes", "mareos", "perdida_apetito", "deshidratacion"]
+    },
+    {
+      "id": "diarrea",
+      "nombre": "Diarrea",
+      "descripcion": "Deposiciones líquidas frecuentes",
+      "icono": "💩",
+      "relacionados": ["diarrea_severa", "deposiciones_sangre", "urgencia_defecacion", "incontinencia", "gases_excesivos"]
+    },
+    {
+      "id": "dificultad_respirar",
+      "nombre": "Dificultad para respirar",
+      "descripcion": "Falta de aire o respiración agitada",
+      "icono": "😰",
+      "relacionados": ["respiracion_rapida", "falta_aire", "silbidos_pecho", "dolor_respirar", "labios_azules"]
+    },
+    {
+      "id": "dolor_cabeza",
+      "nombre": "Dolor de cabeza",
+      "descripcion": "Cefalea o dolor en la cabeza",
+      "icono": "🤕",
+      "relacionados": ["migraña", "dolor_intenso", "vision_borrosa", "sensibilidad_luz", "rigidez_cuello"]
+    },
+    {
+      "id": "dolor_abdominal",
+      "nombre": "Dolor abdominal",
+      "descripcion": "Dolor en el estómago o abdomen",
+      "icono": "😣",
+      "relacionados": ["dolor_estomago", "colicos", "ardor_estomago", "hinchazón", "gases_dolorosos"]
+    },
+    {
+      "id": "escalofrios",
+      "nombre": "Escalofríos / Frío extremo",
+      "descripcion": "Sensación de frío intenso",
+      "icono": "🥶",
+      "relacionados": ["temblores", "piel_fria", "escalofrios_severos", "frio_huesos", "calambres_frio"]
+    },
+    {
+      "id": "cansancio",
+      "nombre": "Fatiga / Cansancio extremo",
+      "descripcion": "Fatiga y debilidad general",
+      "icono": "😴",
+      "relacionados": ["debilidad_extrema", "somnolencia", "agotamiento", "falta_energia", "letargo"]
+    },
+    {
+      "id": "perdida_apetito",
+      "nombre": "Pérdida de apetito",
+      "descripcion": "No tener ganas de comer",
+      "icono": "🍽️",
+      "relacionados": ["rechazo_alimentos", "perdida_peso", "inapetencia", "asco_comida", "boca_seca"]
+    },
+    {
+      "id": "palidez",
+      "nombre": "Palidez / Debilidad",
+      "descripcion": "Piel pálida y debilidad",
+      "icono": "🩸",
+      "relacionados": ["piel_palida", "uñas_palidas", "debilidad_muscular", "mareos_palidez", "fatiga_extrema"]
+    },
+    {
+      "id": "congestion",
+      "nombre": "Secreción nasal / Congestión",
+      "descripcion": "Nariz tupida o con secreciones",
+      "icono": "🤧",
+      "relacionados": ["nariz_tupida", "secrecion_nasal", "estornudos", "dolor_senos", "perdida_olfato"]
+    }
+  ],
+  "sintomas_especificos": {
+    "fiebre_alta": {
+      "nombre": "Fiebre mayor a 38.5°C",
+      "descripcion": "Temperatura corporal muy elevada",
+      "icono": "🌡️"
+    },
+    "escalofrios_severos": {
+      "nombre": "Escalofríos intensos",
+      "descripcion": "Temblores por frío extremo",
+      "icono": "🧊"
+    },
+    "sudoracion_nocturna": {
+      "nombre": "Sudoración nocturna",
+      "descripcion": "Sudor excesivo durante la noche",
+      "icono": "💧"
+    },
+    "dolor_muscular": {
+      "nombre": "Dolor muscular generalizado",
+      "descripcion": "Dolores en músculos y articulaciones",
+      "icono": "💪"
+    },
+    "malestar_general": {
+      "nombre": "Malestar general severo",
+      "descripcion": "Sensación de enfermedad general",
+      "icono": "🤒"
+    },
+    "tos_seca": {
+      "nombre": "Tos seca persistente",
+      "descripcion": "Tos sin expectoración",
+      "icono": "🗣️"
+    },
+    "tos_flema": {
+      "nombre": "Tos con flema",
+      "descripcion": "Tos con expectoración",
+      "icono": "🤧"
+    },
+    "dolor_pecho_tos": {
+      "nombre": "Dolor de pecho al toser",
+      "descripcion": "Molestia en el pecho con la tos",
+      "icono": "💔"
+    },
+    "tos_nocturna": {
+      "nombre": "Tos que empeora en la noche",
+      "descripcion": "Tos más intensa durante la noche",
+      "icono": "🌙"
+    },
+    "flema_sangre": {
+      "nombre": "Flema con sangre",
+      "descripcion": "Expectoración con sangre",
+      "icono": "🩸"
+    },
+    "nauseas_matutinas": {
+      "nombre": "Náuseas matutinas",
+      "descripcion": "Náuseas al despertar",
+      "icono": "🌅"
+    },
+    "vomitos_frecuentes": {
+      "nombre": "Vómitos frecuentes",
+      "descripcion": "Vómitos repetidos",
+      "icono": "🤮"
+    },
+    "mareos": {
+      "nombre": "Mareos constantes",
+      "descripcion": "Sensación de inestabilidad",
+      "icono": "😵"
+    },
+    "deshidratacion": {
+      "nombre": "Signos de deshidratación",
+      "descripcion": "Boca seca, poca orina",
+      "icono": "🏜️"
+    },
+    "diarrea_severa": {
+      "nombre": "Diarrea severa (más de 5 veces/día)",
+      "descripcion": "Diarrea muy frecuente",
+      "icono": "🚽"
+    },
+    "deposiciones_sangre": {
+      "nombre": "Deposiciones con sangre",
+      "descripcion": "Heces con sangre",
+      "icono": "🩸"
+    },
+    "urgencia_defecacion": {
+      "nombre": "Urgencia para defecar",
+      "descripcion": "Necesidad urgente de ir al baño",
+      "icono": "⚡"
+    },
+    "incontinencia": {
+      "nombre": "Incontinencia fecal",
+      "descripcion": "No poder controlar las deposiciones",
+      "icono": "💧"
+    },
+    "gases_excesivos": {
+      "nombre": "Gases excesivos",
+      "descripcion": "Flatulencias muy frecuentes",
+      "icono": "💨"
+    },
+    "respiracion_rapida": {
+      "nombre": "Respiración muy rápida",
+      "descripcion": "Respiración acelerada",
+      "icono": "💨"
+    },
+    "falta_aire": {
+      "nombre": "Sensación de falta de aire",
+      "descripcion": "Dificultad para tomar aire",
+      "icono": "🫁"
+    },
+    "silbidos_pecho": {
+      "nombre": "Silbidos en el pecho",
+      "descripcion": "Ruidos al respirar",
+      "icono": "🎵"
+    },
+    "dolor_respirar": {
+      "nombre": "Dolor al respirar",
+      "descripcion": "Molestia al tomar aire",
+      "icono": "💔"
+    },
+    "labios_azules": {
+      "nombre": "Labios o uñas azuladas",
+      "descripcion": "Coloración azul por falta de oxígeno",
+      "icono": "🔵"
+    },
+    "migraña": {
+      "nombre": "Dolor de cabeza tipo migraña",
+      "descripcion": "Dolor pulsátil intenso",
+      "icono": "🧠"
+    },
+    "dolor_intenso": {
+      "nombre": "Dolor de cabeza muy intenso",
+      "descripcion": "Dolor que no cede con analgésicos",
+      "icono": "💥"
+    },
+    "vision_borrosa": {
+      "nombre": "Visión borrosa",
+      "descripcion": "Dificultad para ver con claridad",
+      "icono": "👁️"
+    },
+    "sensibilidad_luz": {
+      "nombre": "Sensibilidad a la luz",
+      "descripcion": "Molestia con la luz",
+      "icono": "💡"
+    },
+    "rigidez_cuello": {
+      "nombre": "Rigidez en el cuello",
+      "descripcion": "Dificultad para mover el cuello",
+      "icono": "🦴"
+    },
+    "dolor_estomago": {
+      "nombre": "Dolor en la boca del estómago",
+      "descripcion": "Dolor en la parte alta del abdomen",
+      "icono": "🫄"
+    },
+    "colicos": {
+      "nombre": "Cólicos abdominales",
+      "descripcion": "Dolor abdominal en cólicos",
+      "icono": "⚡"
+    },
+    "ardor_estomago": {
+      "nombre": "Ardor en el estómago",
+      "descripcion": "Sensación de quemazón",
+      "icono": "🔥"
+    },
+    "hinchazón": {
+      "nombre": "Hinchazón abdominal",
+      "descripcion": "Abdomen distendido",
+      "icono": "🫃"
+    },
+    "gases_dolorosos": {
+      "nombre": "Gases con dolor",
+      "descripcion": "Flatulencias que causan dolor",
+      "icono": "💨"
+    },
+    "temblores": {
+      "nombre": "Temblores por frío",
+      "descripcion": "Sacudidas involuntarias",
+      "icono": "🥶"
+    },
+    "piel_fria": {
+      "nombre": "Piel muy fría al tacto",
+      "descripcion": "Temperatura corporal baja",
+      "icono": "🧊"
+    },
+    "frio_huesos": {
+      "nombre": "Frío que llega a los huesos",
+      "descripcion": "Sensación de frío profundo",
+      "icono": "🦴"
+    },
+    "calambres_frio": {
+      "nombre": "Calambres por frío",
+      "descripcion": "Contracciones musculares por frío",
+      "icono": "⚡"
+    },
+    "debilidad_extrema": {
+      "nombre": "Debilidad extrema",
+      "descripcion": "Falta de fuerza muscular",
+      "icono": "😵"
+    },
+    "somnolencia": {
+      "nombre": "Somnolencia extrema",
+      "descripcion": "Ganas constantes de dormir",
+      "icono": "😴"
+    },
+    "agotamiento": {
+      "nombre": "Agotamiento físico",
+      "descripcion": "Cansancio que no mejora con descanso",
+      "icono": "🔋"
+    },
+    "falta_energia": {
+      "nombre": "Falta total de energía",
+      "descripcion": "No tener fuerzas para actividades",
+      "icono": "⚡"
+    },
+    "letargo": {
+      "nombre": "Letargo y apatía",
+      "descripcion": "Falta de ganas de hacer nada",
+      "icono": "😑"
+    },
+    "rechazo_alimentos": {
+      "nombre": "Rechazo total a los alimentos",
+      "descripcion": "No querer comer nada",
+      "icono": "🚫"
+    },
+    "perdida_peso": {
+      "nombre": "Pérdida de peso rápida",
+      "descripcion": "Bajar de peso sin motivo",
+      "icono": "⚖️"
+    },
+    "inapetencia": {
+      "nombre": "Inapetencia severa",
+      "descripcion": "Falta total de apetito",
+      "icono": "❌"
+    },
+    "asco_comida": {
+      "nombre": "Asco a los alimentos",
+      "descripcion": "Repulsión a la comida",
+      "icono": "🤢"
+    },
+    "boca_seca": {
+      "nombre": "Boca muy seca",
+      "descripcion": "Falta de saliva",
+      "icono": "🏜️"
+    },
+    "piel_palida": {
+      "nombre": "Piel muy pálida",
+      "descripcion": "Color blanco o amarillento",
+      "icono": "👻"
+    },
+    "uñas_palidas": {
+      "nombre": "Uñas pálidas o blancas",
+      "descripcion": "Uñas sin color rosado",
+      "icono": "💅"
+    },
+    "debilidad_muscular": {
+      "nombre": "Debilidad muscular",
+      "descripcion": "Músculos sin fuerza",
+      "icono": "💪"
+    },
+    "mareos_palidez": {
+      "nombre": "Mareos frecuentes",
+      "descripcion": "Sensación de desmayo",
+      "icono": "😵"
+    },
+    "fatiga_extrema": {
+      "nombre": "Fatiga extrema",
+      "descripcion": "Cansancio que no mejora",
+      "icono": "😴"
+    },
+    "nariz_tupida": {
+      "nombre": "Nariz completamente tapada",
+      "descripcion": "No poder respirar por la nariz",
+      "icono": "👃"
+    },
+    "secrecion_nasal": {
+      "nombre": "Secreción nasal abundante",
+      "descripcion": "Mucha mucosidad nasal",
+      "icono": "💧"
+    },
+    "estornudos": {
+      "nombre": "Estornudos frecuentes",
+      "descripcion": "Estornudar repetidamente",
+      "icono": "🤧"
+    },
+    "dolor_senos": {
+      "nombre": "Dolor en senos paranasales",
+      "descripcion": "Dolor en frente y mejillas",
+      "icono": "😣"
+    },
+    "perdida_olfato": {
+      "nombre": "Pérdida del olfato",
+      "descripcion": "No poder oler",
+      "icono": "👃"
+    }
+  },
+  "enfermedades": [
+    {
+      "id": "ira",
+      "nombre": "Infecciones Respiratorias Agudas (IRA)",
+      "descripcion": "Infecciones del sistema respiratorio que afectan nariz, garganta, bronquios y pulmones. Son especialmente comunes en el altiplano debido a las bajas temperaturas.",
+      "sintomas_principales": ["tos", "fiebre", "dolor_garganta", "nariz_tupida", "dificultad_respirar"],
+      "sintomas_especificos": [
+        "Tos seca o con flema",
+        "Secreción nasal",
+        "Dolor de oído",
+        "Síntomas más severos por la altura",
+        "Tos persistente por aire seco y frío"
+      ],
+      "factores_riesgo": [
+        "Cambios bruscos de temperatura",
+        "Vientos fríos del altiplano",
+        "Hacinamiento en viviendas",
+        "Exposición a humo de cocinas a leña"
+      ],
+      "cuidados_caseros": [
+        "Líquidos tibios frecuentes (agua de hierbas, caldos)",
+        "Vaporizaciones con eucalipto o manzanilla",
+        "Reposo en ambiente cálido pero ventilado",
+        "Mates de muña, eucalipto, manzanilla"
+      ],
+      "alimentos_recomendados": [
+        "Caldos de quinua con verduras",
+        "Sopas de cebada y habas",
+        "Mates de hierbas locales (muña, manzanilla)",
+        "Miel de abeja con limón",
+        "Carne de alpaca (alta en proteínas)"
+      ],
+      "evitar": [
+        "Bebidas muy frías",
+        "Helados y productos refrigerados",
+        "Comidas muy picantes"
+      ],
+      "senales_alarma": [
+        "Dificultad respiratoria severa",
+        "Fiebre mayor a 38.5°C por más de 3 días",
+        "Rechazo total de líquidos y alimentos",
+        "Labios morados",
+        "Convulsiones"
+      ],
+      "prevalencia": "11,1% de muertes en menores de 5 años en el altiplano",
+      "imagen": "/images/sintomas-nino.jpg"
+    },
+    {
+      "id": "eda",
+      "nombre": "Enfermedades Diarreicas Agudas (EDA)",
+      "descripcion": "Infección caracterizada por deposiciones sueltas frecuentes, causada por virus, bacterias o parásitos. En el altiplano se relaciona con problemas de saneamiento.",
+      "sintomas_principales": ["diarrea", "vomitos", "dolor_abdominal", "fiebre"],
+      "sintomas_especificos": [
+        "Deposiciones líquidas frecuentes (3 o más en 24 horas)",
+        "Náuseas y vómitos",
+        "Cólicos abdominales",
+        "Meteorismo (gases)",
+        "Signos de deshidratación"
+      ],
+      "factores_riesgo": [
+        "Falta de saneamiento básico (44,4% sin acceso)",
+        "Agua no tratada de pozos o vertientes",
+        "Mayor deshidratación por la altura",
+        "Contaminación en época de lluvias"
+      ],
+      "cuidados_caseros": [
+        "Suero de rehidratación oral cada 15-20 minutos",
+        "Continuar alimentación habitual si tolera",
+        "No suspender lactancia materna",
+        "Agua de arroz, mate de manzanilla"
+      ],
+      "alimentos_recomendados": [
+        "Agua de quinua cocida",
+        "Caldos de pollo o carne de alpaca sin grasa",
+        "Puré de papa sin mantequilla",
+        "Plátano maduro",
+        "Mates de hierbas (manzanilla, anís)"
+      ],
+      "evitar": [
+        "Productos lácteos",
+        "Comidas grasosas o condimentadas",
+        "Frutas crudas con cáscara",
+        "Bebidas azucaradas o gaseosas"
+      ],
+      "senales_alarma": [
+        "Deshidratación severa (ojos hundidos)",
+        "Vómitos persistentes",
+        "Fiebre mayor a 39°C",
+        "Deposiciones con sangre",
+        "Letargo o pérdida de conciencia"
+      ],
+      "prevalencia": "2,4% de muertes en menores de 5 años (mayor que promedio nacional)",
+      "imagen": "/images/equipos-medicos.jpg"
+    },
+    {
+      "id": "bronquitis",
+      "nombre": "Bronquitis",
+      "descripcion": "Inflamación de los bronquios que causa tos persistente. En el altiplano es frecuente debido al aire frío y seco que irrita las vías respiratorias.",
+      "sintomas_principales": ["tos", "cansancio", "fiebre", "dificultad_respirar"],
+      "sintomas_especificos": [
+        "Tos persistente (puede durar 2-3 semanas)",
+        "Producción de flema (clara, amarilla o verdosa)",
+        "Fatiga y cansancio",
+        "Fiebre baja (menos de 38°C)",
+        "Molestia en el pecho"
+      ],
+      "factores_riesgo": [
+        "Aire frío y seco del altiplano",
+        "Exposición a humo de leña",
+        "Cambios bruscos de temperatura",
+        "Contaminación del aire"
+      ],
+      "cuidados_caseros": [
+        "Reposo relativo",
+        "Hidratación abundante con líquidos tibios",
+        "Vaporizaciones con eucalipto",
+        "Evitar exposición al frío"
+      ],
+      "alimentos_recomendados": [
+        "Caldos calientes",
+        "Miel con limón",
+        "Mates de hierbas expectorantes",
+        "Sopas nutritivas"
+      ],
+      "evitar": [
+        "Exposición al frío",
+        "Humo de cigarrillo",
+        "Actividad física intensa"
+      ],
+      "senales_alarma": [
+        "Fiebre alta persistente",
+        "Dificultad respiratoria severa",
+        "Flema con sangre",
+        "Dolor de pecho intenso"
+      ],
+      "prevalencia": "Común en época seca del altiplano",
+      "imagen": "/images/plantas-medicinales.jpg"
+    },
+    {
+      "id": "neumonia",
+      "nombre": "Neumonía",
+      "descripcion": "Infección grave que inflama los alvéolos pulmonares. En el altiplano puede ser más severa debido a la menor disponibilidad de oxígeno.",
+      "sintomas_principales": ["tos", "fiebre", "dificultad_respirar", "cansancio", "dolor_cabeza"],
+      "sintomas_especificos": [
+        "Tos con flema amarilla o verdosa",
+        "Fiebre alta con escalofríos",
+        "Dificultad respiratoria marcada",
+        "Dolor de pecho al respirar",
+        "Sudoración profusa"
+      ],
+      "factores_riesgo": [
+        "Complicación de IRA no tratada",
+        "Desnutrición",
+        "Hacinamiento",
+        "Exposición a humo de leña",
+        "Altitud (mayor riesgo de hipoxia)"
+      ],
+      "cuidados_caseros": [
+        "Reposo absoluto",
+        "Hidratación constante",
+        "Control de fiebre",
+        "Posición semi-sentado para facilitar respiración"
+      ],
+      "alimentos_recomendados": [
+        "Caldos nutritivos",
+        "Líquidos tibios abundantes",
+        "Alimentos fáciles de digerir",
+        "Frutas ricas en vitamina C"
+      ],
+      "evitar": [
+        "Automedicación",
+        "Exposición al frío",
+        "Actividad física"
+      ],
+      "senales_alarma": [
+        "Dificultad respiratoria severa",
+        "Labios o uñas azuladas",
+        "Confusión mental",
+        "Fiebre muy alta (>39°C)",
+        "Dolor de pecho intenso"
+      ],
+      "prevalencia": "Principal causa de hospitalización infantil en el altiplano",
+      "imagen": "/images/consulta-medica.jpg"
+    },
+    {
+      "id": "parasitosis",
+      "nombre": "Parasitosis Intestinal",
+      "descripcion": "Infección por parásitos intestinales como lombrices, tenias y protozoarios. Muy común en el altiplano debido a condiciones de saneamiento.",
+      "sintomas_principales": ["dolor_abdominal", "diarrea", "cansancio"],
+      "sintomas_especificos": [
+        "Dolor abdominal intermitente",
+        "Diarrea ocasional",
+        "Pérdida de peso",
+        "Picazón anal nocturna",
+        "Presencia de lombrices en deposiciones"
+      ],
+      "factores_riesgo": [
+        "Falta de saneamiento (91,2% de prevalencia)",
+        "Agua contaminada",
+        "Defecación al aire libre",
+        "Falta de higiene en manipulación de alimentos"
+      ],
+      "cuidados_caseros": [
+        "Lavado frecuente de manos",
+        "Hervir el agua de consumo",
+        "Cocinar bien los alimentos",
+        "Mantener limpieza personal"
+      ],
+      "alimentos_recomendados": [
+        "Ajo y cebolla (antiparasitarios naturales)",
+        "Semillas de calabaza",
+        "Papaya",
+        "Alimentos bien cocidos"
+      ],
+      "evitar": [
+        "Alimentos crudos mal lavados",
+        "Agua no hervida",
+        "Carne mal cocida"
+      ],
+      "senales_alarma": [
+        "Pérdida de peso significativa",
+        "Anemia severa",
+        "Dolor abdominal intenso",
+        "Sangre en deposiciones"
+      ],
+      "prevalencia": "91,2% en población del altiplano",
+      "imagen": "/images/equipos-medicos.jpg"
+    },
+    {
+      "id": "desnutricion",
+      "nombre": "Desnutrición Crónica Infantil",
+      "descripcion": "Estado nutricional deficiente que afecta el crecimiento y desarrollo infantil. En el altiplano afecta significativamente a la población menor de 5 años.",
+      "sintomas_principales": ["cansancio"],
+      "sintomas_especificos": [
+        "Talla baja para la edad",
+        "Peso bajo",
+        "Retraso en desarrollo psicomotor",
+        "Infecciones frecuentes",
+        "Fatiga y debilidad"
+      ],
+      "factores_riesgo": [
+        "Pobreza extrema (9,8-12,3%)",
+        "Acceso limitado a alimentos nutritivos",
+        "Falta de educación nutricional",
+        "Infecciones recurrentes"
+      ],
+      "cuidados_caseros": [
+        "Alimentación diversificada",
+        "Lactancia materna exclusiva hasta 6 meses",
+        "Introducción gradual de alimentos",
+        "Control de crecimiento regular"
+      ],
+      "alimentos_recomendados": [
+        "Quinua (superalimento andino)",
+        "Carne de alpaca y llama",
+        "Habas y cebada",
+        "Leche y derivados",
+        "Huevos",
+        "Frutas y verduras locales"
+      ],
+      "evitar": [
+        "Alimentos ultraprocesados",
+        "Bebidas azucaradas",
+        "Comida chatarra"
+      ],
+      "senales_alarma": [
+        "No ganancia de peso por 2 meses",
+        "Infecciones muy frecuentes",
+        "Retraso evidente en desarrollo",
+        "Pérdida de peso progresiva"
+      ],
+      "prevalencia": "Tasa alta en menores de 5 años en el altiplano",
+      "imagen": "/images/quinua.jpeg"
+    },
+    {
+      "id": "anemia",
+      "nombre": "Anemia",
+      "descripcion": "Disminución de glóbulos rojos o hemoglobina en sangre. En el altiplano de Puno afecta al 62,6% de niños entre 6-59 meses.",
+      "sintomas_principales": ["cansancio", "dolor_cabeza"],
+      "sintomas_especificos": [
+        "Palidez en piel y mucosas",
+        "Fatiga y debilidad",
+        "Falta de apetito",
+        "Irritabilidad",
+        "Uñas quebradizas",
+        "Caída de cabello"
+      ],
+      "factores_riesgo": [
+        "Deficiencia de hierro en la dieta",
+        "Parasitosis intestinal",
+        "Desnutrición",
+        "Altitud (mayor demanda de oxígeno)"
+      ],
+      "cuidados_caseros": [
+        "Alimentación rica en hierro",
+        "Consumo de vitamina C para absorción",
+        "Tratamiento de parasitosis",
+        "Suplementación según indicación médica"
+      ],
+      "alimentos_recomendados": [
+        "Hígado y carnes rojas",
+        "Carne de alpaca y llama",
+        "Quinua y kiwicha",
+        "Habas y lentejas",
+        "Espinaca y acelga",
+        "Cítricos (para absorción de hierro)"
+      ],
+      "evitar": [
+        "Té y café con las comidas",
+        "Lácteos con alimentos ricos en hierro",
+        "Automedicación con hierro"
+      ],
+      "senales_alarma": [
+        "Palidez extrema",
+        "Dificultad respiratoria",
+        "Palpitaciones",
+        "Mareos frecuentes",
+        "Desmayos"
+      ],
+      "prevalencia": "62,6% en niños 6-59 meses vs 33,4% nacional",
+      "imagen": "/images/quinua.jpeg"
+    },
+    {
+      "id": "hipertension",
+      "nombre": "Hipertensión Arterial",
+      "descripcion": "Presión arterial elevada de forma sostenida. En el altiplano puede estar relacionada con la adaptación cardiovascular a la altura.",
+      "sintomas_principales": ["dolor_cabeza"],
+      "sintomas_especificos": [
+        "Dolor de cabeza (especialmente matutino)",
+        "Zumbido en oídos",
+        "Visión borrosa",
+        "Mareos",
+        "Palpitaciones",
+        "Sangrado nasal ocasional"
+      ],
+      "factores_riesgo": [
+        "Sobrepeso y obesidad",
+        "Consumo excesivo de sal",
+        "Estrés",
+        "Sedentarismo",
+        "Adaptación a la altura"
+      ],
+      "cuidados_caseros": [
+        "Dieta baja en sal",
+        "Ejercicio regular adaptado a la altura",
+        "Control de peso",
+        "Manejo del estrés",
+        "Medicación según prescripción"
+      ],
+      "alimentos_recomendados": [
+        "Quinua (bajo en sodio)",
+        "Frutas y verduras frescas",
+        "Pescado y carnes magras",
+        "Cereales integrales",
+        "Frutos secos sin sal"
+      ],
+      "evitar": [
+        "Sal en exceso",
+        "Alimentos procesados",
+        "Alcohol",
+        "Tabaco",
+        "Grasas saturadas"
+      ],
+      "senales_alarma": [
+        "Dolor de cabeza severo súbito",
+        "Visión borrosa intensa",
+        "Dolor de pecho",
+        "Dificultad respiratoria",
+        "Confusión mental"
+      ],
+      "prevalencia": "Creciente en población adulta del altiplano",
+      "imagen": "/images/equipos-medicos.jpg"
+    },
+    {
+      "id": "diabetes",
+      "nombre": "Diabetes Tipo 2",
+      "descripcion": "Enfermedad metabólica caracterizada por niveles altos de glucosa en sangre. Emergente en el altiplano por cambios en estilo de vida.",
+      "sintomas_principales": ["cansancio"],
+      "sintomas_especificos": [
+        "Sed excesiva",
+        "Orinar frecuentemente",
+        "Hambre constante",
+        "Pérdida de peso inexplicable",
+        "Visión borrosa",
+        "Cicatrización lenta de heridas"
+      ],
+      "factores_riesgo": [
+        "Sobrepeso y obesidad",
+        "Sedentarismo",
+        "Alimentación alta en azúcares",
+        "Antecedentes familiares",
+        "Estrés crónico"
+      ],
+      "cuidados_caseros": [
+        "Control de glucosa regular",
+        "Dieta balanceada baja en azúcares",
+        "Ejercicio regular",
+        "Medicación según prescripción",
+        "Control de peso"
+      ],
+      "alimentos_recomendados": [
+        "Quinua (índice glicémico bajo)",
+        "Verduras de hoja verde",
+        "Carnes magras",
+        "Pescado",
+        "Legumbres",
+        "Frutas con moderación"
+      ],
+      "evitar": [
+        "Azúcar refinada",
+        "Bebidas azucaradas",
+        "Harinas refinadas",
+        "Alimentos ultraprocesados",
+        "Grasas trans"
+      ],
+      "senales_alarma": [
+        "Glucosa muy alta (>400 mg/dl)",
+        "Cetoacidosis (aliento frutal)",
+        "Deshidratación severa",
+        "Vómitos persistentes",
+        "Confusión mental"
+      ],
+      "prevalencia": "En aumento en población adulta del altiplano",
+      "imagen": "/images/equipos-medicos.jpg"
+    },
+    {
+      "id": "dermatitis_frio",
+      "nombre": "Dermatitis por Frío",
+      "descripcion": "Inflamación de la piel causada por exposición prolongada al frío intenso del altiplano. Afecta especialmente manos, pies y cara.",
+      "sintomas_principales": [],
+      "sintomas_especificos": [
+        "Enrojecimiento de la piel",
+        "Picazón intensa",
+        "Descamación",
+        "Grietas en la piel",
+        "Hinchazón localizada",
+        "Dolor al tacto"
+      ],
+      "factores_riesgo": [
+        "Exposición prolongada al frío",
+        "Vientos fríos del altiplano",
+        "Humedad baja",
+        "Actividades al aire libre",
+        "Protección inadecuada"
+      ],
+      "cuidados_caseros": [
+        "Protección con ropa adecuada",
+        "Uso de cremas hidratantes",
+        "Evitar exposición directa al frío",
+        "Calentamiento gradual",
+        "Mantener piel humectada"
+      ],
+      "alimentos_recomendados": [
+        "Alimentos ricos en vitamina E",
+        "Aceites naturales",
+        "Frutas y verduras antioxidantes",
+        "Líquidos tibios abundantes"
+      ],
+      "evitar": [
+        "Exposición prolongada al frío",
+        "Jabones agresivos",
+        "Alcohol sobre la piel",
+        "Rascado excesivo"
+      ],
+      "senales_alarma": [
+        "Úlceras que no cicatrizan",
+        "Infección secundaria",
+        "Pérdida de sensibilidad",
+        "Cambio de color permanente"
+      ],
+      "prevalencia": "Común en trabajadores al aire libre del altiplano",
+      "imagen": "/images/plantas-medicinales.jpg"
+    }
+  ],
+  "centros_salud": [
+    {
+      "nombre": "Hospital Nacional Carlos Monge Medrano",
+      "ubicacion": "Puno",
+      "telefono": "051-369710",
+      "tipo": "Hospital Nacional"
+    },
+    {
+      "nombre": "Centro de Salud Huancané",
+      "ubicacion": "Huancané",
+      "telefono": "051-561234",
+      "tipo": "Centro de Salud"
+    },
+    {
+      "nombre": "Puesto de Salud Rosaspata",
+      "ubicacion": "Rosaspata",
+      "telefono": "051-567890",
+      "tipo": "Puesto de Salud"
+    }
+  ],
+  "medicina_tradicional": [
+    {
+      "nombre": "Muña",
+      "uso": "Problemas respiratorios, digestivos",
+      "preparacion": "Mate o infusión"
+    },
+    {
+      "nombre": "Eucalipto",
+      "uso": "Afecciones respiratorias",
+      "preparacion": "Vaporizaciones, mates"
+    },
+    {
+      "nombre": "Manzanilla",
+      "uso": "Problemas digestivos, calmante",
+      "preparacion": "Infusión"
+    },
+    {
+      "nombre": "Coca",
+      "uso": "Mal de altura, energía",
+      "preparacion": "Masticado, mate"
+    }
+  ]
+}
