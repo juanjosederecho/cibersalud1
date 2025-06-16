@@ -18,11 +18,11 @@ export const Header: React.FC = () => {
         {/* Título Principal */}
         <div className="text-center mb-2">
           <div className="flex items-center justify-center gap-2 mb-1">
-            <Heart className="w-8 h-8 text-red-200" fill="currentColor" />
+            <img src="/mi_imagen.png" alt="icono" style={{ width: "32px", height: "32px", verticalAlign: "middle", borderRadius: "50%" }} />
             <h1 className="text-3xl font-bold tracking-wide">
               CIBERSALUD 360
             </h1>
-            <Heart className="w-8 h-8 text-red-200" fill="currentColor" />
+            <img src="/mi_imagen.png" alt="icono" style={{ width: "32px", height: "32px", verticalAlign: "middle", borderRadius: "50%" }} />
           </div>
           <p className="text-amber-100 text-lg font-medium">
             Atención Médica Digital para el Altiplano de Puno
